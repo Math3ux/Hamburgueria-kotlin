@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Hamburgueria App</string>
+    <string name="app_title">Hamburgueria</string>
+    <string name="app_logo">Logo da Hamburgueria</string>
+    <string name="nome_cliente">Nome do Cliente:</string>
+    <string name="digite_seu_nome">Digite seu nome</string>
+    <string name="escolha_os_ingredientes">Escolha os ingredientes:</string>
+    <string name="alface">Alface</string>
+    <string name="queijo">Queijo</string>
+    <string name="pickles">Pickles</string>
+    <string name="cebola">Cebola</string>
+    <string name="tomate">Tomate</string>
+    <string name="quantidade">Quantidade:</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="quantidade_inicial">1</string>
+    <string name="preco_total">Preço Total:</string>
+    <string name="preco_inicial">R$ 20,00</string>
+    <string name="enviar_pedido">Enviar Pedido</string>
+</resources>

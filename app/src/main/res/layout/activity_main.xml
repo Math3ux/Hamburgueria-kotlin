@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/app_logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/burger_logo" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            style="@style/TitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/app_title"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/textViewNomeCliente"
+            style="@style/SubtitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nome_cliente" />
+
+        <EditText
+            android:id="@+id/editTextNomeCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/digite_seu_nome"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textViewIngredientes"
+            style="@style/SubtitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/escolha_os_ingredientes" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAlface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alface" />
+
+        <CheckBox
+            android:id="@+id/checkBoxQueijo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/queijo" />
+
+        <CheckBox
+            android:id="@+id/checkBoxPickles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pickles" />
+
+        <CheckBox
+            android:id="@+id/checkBoxCebola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cebola" />
+
+        <CheckBox
+            android:id="@+id/checkBoxTomato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tomate"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textViewQuantidade"
+            style="@style/SubtitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantidade" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/buttonRemove"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="@string/minus"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewQuantidadeValor"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:text="@string/quantidade_inicial"
+                android:textSize="18sp"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="@string/plus"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewPrecoTotal"
+            style="@style/SubtitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/preco_total" />
+
+        <TextView
+            android:id="@+id/textViewPrecoValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/preco_inicial"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/buttonEnviarPedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enviar_pedido"
+            android:padding="16dp" />
+
+    </LinearLayout>
+</ScrollView>
